@@ -1,0 +1,6 @@
+condition,code_length_chips,tested_users_at_ber_le_1e-2,ber_at_that_load
+walsh_sync,8,8,0.00591250
+random_codes,8,2,0.00580000
+walsh_sync,16,16,0.00580313
+walsh_sync,64,64,0.00595703
+random_codes,64,2,0.00650000
