@@ -1,0 +1,4 @@
+scheme,mean_sum_throughput_bps_hz,jains_fairness,minimum_mean_user_rate,maximum_mean_user_rate
+fixed_contiguous,185.7805,0.9777,23.0391,23.5080
+interleaved_round_robin,185.7977,0.9778,23.0541,23.5000
+channel_aware_best_subcarrier,299.9521,0.9024,36.9517,37.7974
