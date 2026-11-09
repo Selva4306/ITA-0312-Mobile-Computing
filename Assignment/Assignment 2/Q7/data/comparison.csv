@@ -1,0 +1,3 @@
+strategy,sessions_offered_per_hour,sessions_accepted_per_hour,session_blocking_percent,burst_blocking_percent,reserved_channel_utilisation_percent,active_channel_utilisation_percent,payload_capacity_utilisation_percent,reserved_idle_waste_percent,allocation_rule
+Original dedicated FDMA,9000.97,8497.75,5.591,,88.815,,8.881,79.933,One channel held for full session
+Redesigned on-demand FDMA,9000.97,,,0.000,,9.408,9.408,0.000,Channel allocated only during active burst
