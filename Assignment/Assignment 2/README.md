@@ -107,3 +107,27 @@ python q5_simulation.py
 The normalised array factor is AF(θ) = |sin(Nψ/2)/(N sin(ψ/2))|, where ψ = π(sin θ − sin θ0) for d = λ/2. The 10 dB SIR threshold is first met at approximately 53°, 23°, 11° and 6° for N = 2, 4, 8 and 16 respectively. Larger arrays narrow the main lobe and improve angular separation, while the peak sidelobe remains around −11 to −13 dB for N ≥ 4.
 
 An ideal omni antenna has no angular discrimination. An ideal 120° sector rejects users outside its sector but cannot separate users within the same sector. At a toll plaza, vehicles are mostly aligned in one direction, so angular separation is limited; SDMA alone is not reliable. Use scheduled time/frequency resources or additional spatial/channel discrimination instead.
+
+## Q6 – Choosing Multiple-Access Techniques for Real Deployments
+
+Q6 uses a weighted 1–5 decision matrix for five access methods across four deployments. Weights are deployment-specific and total 100% per case. A small Python script calculates weighted scores and tests each criterion at -20% and +20%, one at a time.
+
+- [Decision matrix and weights](Q6/data/ratings_and_weights.csv)
+- [Weighted scores](Q6/data/weighted_scores.csv)
+- [Sensitivity results](Q6/data/sensitivity.csv)
+- [Calculation script](Q6/q6_decision.py)
+
+Run with:
+
+```bash
+cd Q6
+python q6_decision.py
+```
+
+Recommended choices:
+- Cellular voice: TDMA primary, FDMA+TDMA hybrid (classic dedicated carrier/slot organisation).
+- Tactical link: CDMA with direct-sequence spreading or frequency hopping and power control; anti-jam performance depends on processing gain and waveform implementation.
+- Stadium downlink: OFDMA primary, with SDMA beamforming as a spatial reuse layer.
+- 5,000 low-rate sensors: scheduled TDMA primary, with FDMA channel groups if needed; short packets, aggregation and sleep scheduling reduce overhead.
+
+Sensitivity check: no winning technique changes when any single criterion weight is adjusted by ±20% while the other weights remain fixed. These are reasoned qualitative ratings, not measured field performance.
