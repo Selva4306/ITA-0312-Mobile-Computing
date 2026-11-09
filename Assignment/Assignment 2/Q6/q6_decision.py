@@ -25,7 +25,7 @@ cases = {
     "sensor_network": {
         "weights": [15,20,15,30,20],
         "criteria": ["capacity", "reliability", "fairness", "scalability", "simplicity"],
-        "ratings": [[3,3,3,2,2], [3,4,4,4,4], [2,4,3,3,5], [3,4,3,4,2], [5,4,4,4,3]]
+        "ratings": [[3,3,3,2,2], [3,4,4,4,5], [2,4,3,3,5], [3,4,3,4,2], [4,4,4,4,2]]
     }
 }
 
