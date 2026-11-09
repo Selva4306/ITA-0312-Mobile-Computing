@@ -44,3 +44,27 @@ python q2_simulation.py
 ```
 
 The simulation compares 79 estimated usable FDMA channels with 70 estimated usable TDMA slots. It models a 60-minute period, 300 replications per traffic condition, Poisson arrivals and exponential holding times. The three conditions are continuous voice, bursty data with 10% payload duty cycle, and a 70/30 voice-data mix with synchronised arrival bursts (the edge case). Results report blocking, reserved-channel utilisation, payload utilisation, reserved-but-idle capacity and unoccupied capacity. The fixed random seed makes the results reproducible.
+
+## Q3 – CDMA: Orthogonality, Spreading and the Near-Far Problem
+
+Q3's reproducible direct-sequence CDMA simulation and evidence are stored in `Q3/`.
+
+- [Q3 simulation source](Q3/q3_simulation.py)
+- [Test condition definitions](Q3/data/test_conditions.csv)
+- [BER simulation results](Q3/data/simulation_results.csv)
+- [Pairwise code-correlation summary](Q3/data/correlation_values.csv)
+- [Users meeting the BER target](Q3/data/supported_users.csv)
+- [BER vs users chart](Q3/figures/ber_vs_users.svg)
+- [Correlation comparison chart](Q3/figures/correlation_comparison.svg)
+
+### Run Q3 simulation
+
+From the `Assignment/Assignment 2` folder:
+
+```bash
+pip install -r requirements.txt
+cd Q3
+python q3_simulation.py
+```
+
+The simulation uses 20,000 bits per measured user, a fixed seed, and Eb/N0 of 5 dB. It tests 8-, 16- and 64-chip spreading codes under synchronous Walsh orthogonality, random non-orthogonal codes, and a near-far case with a 10-times-power interferer delayed by one chip. The one-chip offset is intentional: unequal power alone does not destroy perfectly synchronous Walsh orthogonality, but timing error creates cross-correlation that lets the strong user interfere with weaker users. Processing gain is N, or 10 log10(N) dB.
