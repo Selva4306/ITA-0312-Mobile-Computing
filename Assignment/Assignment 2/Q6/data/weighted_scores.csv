@@ -15,7 +15,7 @@ stadium_downlink,FDMA,3.25
 stadium_downlink,CDMA,3.05
 stadium_downlink,OFDMA,4.40
 sensor_network,SDMA,2.50
-sensor_network,TDMA,3.85
-sensor_network,FDMA,3.45
+sensor_network,TDMA,4.05
+sensor_network,FDMA,3.65
 sensor_network,CDMA,3.30
-sensor_network,OFDMA,3.95
+sensor_network,OFDMA,3.60
