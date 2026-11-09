@@ -15,8 +15,8 @@ stadium_downlink,reliability,15,3,4,4,3,4
 stadium_downlink,fairness,15,3,4,4,3,4
 stadium_downlink,scalability,20,4,4,3,4,5
 stadium_downlink,simplicity,15,2,4,5,2,3
-sensor_network,capacity,15,3,3,2,3,5
+sensor_network,capacity,15,3,3,2,3,4
 sensor_network,reliability,20,3,4,4,4,4
 sensor_network,fairness,15,3,4,3,3,4
 sensor_network,scalability,30,2,4,3,4,4
-sensor_network,simplicity,20,2,4,5,2,3
+sensor_network,simplicity,20,2,5,5,2,2
