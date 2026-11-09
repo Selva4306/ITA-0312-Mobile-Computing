@@ -1,0 +1,4 @@
+condition,code_family,timing,power_setting,purpose
+walsh_sync,Walsh-Hadamard,All users chip-synchronous,Equal received power,Ideal orthogonal baseline
+random_codes,Random bipolar spreading sequences,All users chip-synchronous,Equal received power,Non-zero cross-correlation and multiple-access interference
+near_far,Walsh-Hadamard,Strong user delayed by one chip,Strong user has 10x power; others equal,Near-far leakage when timing destroys orthogonality
