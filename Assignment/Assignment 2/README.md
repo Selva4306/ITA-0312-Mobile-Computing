@@ -131,3 +131,55 @@ Recommended choices:
 - 5,000 low-rate sensors: scheduled TDMA primary, with FDMA channel groups if needed; short packets, aggregation and sleep scheduling reduce overhead.
 
 Sensitivity check: no winning technique changes when any single criterion weight is adjusted by ±20% while the other weights remain fixed. These are reasoned qualitative ratings, not measured field performance.
+
+
+## Q7 – Diagnose, Redesign and Validate: On-Demand FDMA Allocation
+
+Q7 selects the bursty-data FDMA limitation found in Q2. The original dedicated design held one channel for an entire data session even though the payload was active for only 10% of the session. Q2 measured 79.95% reserved-but-idle capacity for this case.
+
+- [Redesign simulation](Q7/q7_redesign.py)
+- [Original vs redesigned results](Q7/data/comparison.csv)
+- [Simulation parameters](Q7/data/design_parameters.csv)
+
+### Diagnosis and objective
+
+With 79 usable FDMA channels and 75 Erlangs of offered bursty-data traffic, the original design reserved a channel from session admission until session completion. The channel remained unavailable to other users during the 90% inactive portion. The limiting characteristic is session-level exclusive reservation, not the 25 kHz channel width itself.
+
+Objective: keep the same 79-channel pool and offered traffic, allocate a channel only while a data burst is active, reduce reserved-but-idle capacity from about 80% to 0%, and keep burst blocking below 1%.
+
+### Revised strategy
+
+Split the data session into short 6-second scheduling intervals. At each interval, identify sessions that are still alive, determine which have data ready, and allocate free FDMA channels only to those active bursts. Release each channel at the end of the interval; inactive sessions retain their session state but do not hold radio capacity.
+
+Pseudocode:
+
+```text
+For each 6-second interval:
+    Find sessions that have not ended
+    For each live session:
+        If a data burst is ready:
+            Add it to the request queue
+    Assign up to 79 free channels to queued bursts
+    Transmit assigned bursts
+    Release all assigned channels
+    Keep unfinished sessions for the next interval
+```
+
+The prototype uses 300 replications, the same 60-minute period, 79 channels, 75 Erlangs, 0.5-minute mean session duration and 10% activity. The original and redesigned cases use the same generated session arrivals in each replication. The redesigned model samples burst activity in 6-second intervals.
+
+### Prediction and validation
+
+Prediction: channel holding waste should fall sharply because inactive sessions no longer reserve channels. The number of data bursts blocked should remain low because average active demand is much smaller than 79 channels.
+
+The simulation measured 79.933% reserved-idle waste and 5.591% session blocking in the original model. The redesigned model measured 0.000% reserved-idle waste and 0.000% burst blocking; active channel use was 9.408%. The original and redesigned blocking figures refer to different units (session admission versus individual burst requests), so they should not be interpreted as a direct like-for-like blocking comparison. The comparable capacity result is the drop in reserved-idle waste; useful payload capacity use rose from 8.881% to 9.408%.
+
+### Final evaluation and trade-offs
+
+The prediction was supported: the redesign removes long-lived reservations and eliminates reserved-idle waste in this prototype. It adds a scheduler, session-state tracking, request/grant signalling and up to 6 seconds of scheduling granularity. The simulation does not charge control-message overhead or model queueing delay, so a real deployment must measure those costs. Dedicated allocation may still be preferable for continuous voice or delay-sensitive traffic, where a stable channel avoids repeated requests and scheduling delay.
+
+Run from the assignment folder:
+
+```bash
+cd Q7
+python q7_redesign.py
+```
