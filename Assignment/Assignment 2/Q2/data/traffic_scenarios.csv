@@ -1,0 +1,4 @@
+scenario,offered_load_erlangs,voice_share_percent,mean_holding_time_minutes,traffic_pattern
+Continuous voice,75,100,4.0,Poisson arrivals; continuous occupancy
+Bursty data (10% duty),75,0,0.5,Poisson arrivals; dedicated channel reserved while payload active only 10%
+Synchronized mixed (70/30),75,70,4.0 voice / 0.5 data,"Edge case: arrivals clustered in first minute of each 15-minute period"
