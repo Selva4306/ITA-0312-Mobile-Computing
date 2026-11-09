@@ -1,0 +1,47 @@
+deployment,weight_test,winning_technique
+cellular_voice,base,TDMA
+cellular_voice,capacity -20%,TDMA
+cellular_voice,capacity +20%,TDMA
+cellular_voice,reliability -20%,TDMA
+cellular_voice,reliability +20%,TDMA
+cellular_voice,fairness -20%,TDMA
+cellular_voice,fairness +20%,TDMA
+cellular_voice,scalability -20%,TDMA
+cellular_voice,scalability +20%,TDMA
+cellular_voice,simplicity -20%,TDMA
+cellular_voice,simplicity +20%,TDMA
+tactical_link,base,CDMA
+tactical_link,capacity -20%,CDMA
+tactical_link,capacity +20%,CDMA
+tactical_link,reliability -20%,CDMA
+tactical_link,reliability +20%,CDMA
+tactical_link,fairness -20%,CDMA
+tactical_link,fairness +20%,CDMA
+tactical_link,scalability -20%,CDMA
+tactical_link,scalability +20%,CDMA
+tactical_link,simplicity -20%,CDMA
+tactical_link,simplicity +20%,CDMA
+tactical_link,jam_resistance -20%,CDMA
+tactical_link,jam_resistance +20%,CDMA
+stadium_downlink,base,OFDMA
+stadium_downlink,capacity -20%,OFDMA
+stadium_downlink,capacity +20%,OFDMA
+stadium_downlink,reliability -20%,OFDMA
+stadium_downlink,reliability +20%,OFDMA
+stadium_downlink,fairness -20%,OFDMA
+stadium_downlink,fairness +20%,OFDMA
+stadium_downlink,scalability -20%,OFDMA
+stadium_downlink,scalability +20%,OFDMA
+stadium_downlink,simplicity -20%,OFDMA
+stadium_downlink,simplicity +20%,OFDMA
+sensor_network,base,OFDMA
+sensor_network,capacity -20%,OFDMA
+sensor_network,capacity +20%,OFDMA
+sensor_network,reliability -20%,OFDMA
+sensor_network,reliability +20%,OFDMA
+sensor_network,fairness -20%,OFDMA
+sensor_network,fairness +20%,OFDMA
+sensor_network,scalability -20%,OFDMA
+sensor_network,scalability +20%,OFDMA
+sensor_network,simplicity -20%,OFDMA
+sensor_network,simplicity +20%,OFDMA
