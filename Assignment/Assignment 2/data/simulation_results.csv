@@ -1,4 +1,0 @@
-availability_percent,immediate_delivered_per_60,immediate_delayed_per_60,immediate_lost_per_60,immediate_mean_delay_min,store_forward_delivered_per_60,store_forward_delayed_deliveries_per_60,store_forward_lost_per_60,store_forward_pending_at_end_per_60,store_forward_mean_delay_min
-90,54.036,0.000,5.964,0.000,60.000,5.964,0.000,0.000,0.111
-60,36.021,0.000,23.979,0.000,59.996,24.116,0.000,0.004,0.673
-30,17.945,0.000,42.055,0.000,59.765,45.026,0.000,0.235,3.026
