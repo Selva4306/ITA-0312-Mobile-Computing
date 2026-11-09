@@ -1,0 +1,8 @@
+parameter,value
+users,8
+subcarriers,64
+channel_realisations,1000
+SNR_linear,10
+fading_model,Rayleigh power gain (exponential with unit mean)
+rate_formula,log2(1 + SNR * channel_gain)
+seed,44064
