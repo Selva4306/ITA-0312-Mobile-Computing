@@ -6,6 +6,7 @@ This folder contains an original analysis and reproducible simulation for the fi
 - [Q1_Report.md](Q1_Report.md) – complete written answer, classification, simulation methodology, results and conclusion
 - [q1.py](q1.py) – reproducible Monte Carlo simulation
 - [data/simulation_results.csv](data/simulation_results.csv) – averaged simulation results
+- [figures/simulation_comparison.svg](figures/simulation_comparison.svg) – delivery and delay chart
 - [requirements.txt](requirements.txt) – Python dependencies
 
 ## Run the simulation
