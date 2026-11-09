@@ -23,3 +23,11 @@ channel_aware_best_subcarrier,5,37.7668
 channel_aware_best_subcarrier,6,37.5548
 channel_aware_best_subcarrier,7,37.1333
 channel_aware_best_subcarrier,8,37.7817
+minimum_rate_aware,1,30.1730
+minimum_rate_aware,2,30.4977
+minimum_rate_aware,3,30.6812
+minimum_rate_aware,4,30.0076
+minimum_rate_aware,5,30.4010
+minimum_rate_aware,6,30.0695
+minimum_rate_aware,7,30.1653
+minimum_rate_aware,8,30.5677
