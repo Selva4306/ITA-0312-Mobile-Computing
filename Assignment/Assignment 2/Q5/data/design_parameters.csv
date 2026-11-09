@@ -1,0 +1,7 @@
+parameter,value
+array,uniform linear array
+spacing,0.5 wavelength
+steering_direction,0 degrees broadside
+SIR_threshold,10 dB
+equal_transmit_power,assumed
+sector_comparator,120 degrees
