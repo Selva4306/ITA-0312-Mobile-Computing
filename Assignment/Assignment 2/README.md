@@ -1,26 +1,33 @@
-# Assignment 2 – Q1: Mobile Communication or Mobile Computing?
+# Assignment 2 – Mobile Computing (Q1–Q7)
 
-This folder contains an original analysis and reproducible simulation for the field-service technology audit.
+All assignment work is organised into separate question folders. The Assignment 2 directory contains only the seven question folders and this common README.
 
-## Files
-- [Q1_Report.md](Q1_Report.md) – complete written answer, classification, simulation methodology, results and conclusion
-- [q1.py](q1.py) – reproducible Monte Carlo simulation
-- [data/simulation_results.csv](data/simulation_results.csv) – averaged simulation results
-- [figures/simulation_comparison.svg](figures/simulation_comparison.svg) – delivery and delay chart
-- [requirements.txt](requirements.txt) – Python dependencies
+## Question folders
+- [Q1 – Mobile Communication or Mobile Computing](Q1/)
+- [Q2 – FDMA vs TDMA](Q2/)
+- [Q3 – CDMA](Q3/)
+- [Q4 – OFDMA](Q4/)
+- [Q5 – SDMA](Q5/)
+- [Q6 – Multiple-Access Selection](Q6/)
+- [Q7 – Diagnose, Redesign and Validate](Q7/)
 
-## Run the simulation
-Install dependencies and run from this folder:
+## Q1 – Mobile Communication or Mobile Computing
+- [Q1 answer](Q1/Q1_Report.md)
+- [Simulation source](Q1/q1.py)
+- [Simulation results](Q1/data/simulation_results.csv)
+- [Delivery and delay chart](Q1/figures/simulation_comparison.svg)
+- [Python dependencies](Q1/requirements.txt)
+
+Run from the Assignment 2 folder:
 
 ```bash
-pip install -r requirements.txt
+pip install -r Q1/requirements.txt
+cd Q1
 python q1.py
 ```
 
-The script recreates `data/simulation_results.csv`. It uses a fixed random seed for reproducibility.
-
-## Model assumptions
-A six-hour shift has 60 updates, one generated every six minutes. Link state is independently sampled once per minute using the stated availability probability. The immediate strategy attempts transmission only at update creation and drops a failed update. The store-and-forward strategy uses a FIFO queue of capacity 12; a link-up minute sends one queued update. Overflow drops the newest update. The simulation stops at shift end; remaining queued updates are reported as pending, not lost. Results are averages over 5,000 trials, so fractional counts are expected values per 60 generated updates.
+## Q1 model assumptions
+A six-hour shift has 60 updates, one generated every six minutes. Link state is independently sampled once per minute using the stated availability probability. The immediate strategy attempts transmission only at update creation and drops a failed update. The store-and-forward strategy uses a FIFO queue of capacity 12; a link-up minute sends one queued update. Overflow drops the newest update. The simulation stops at shift end; remaining queued updates are reported as pending, not lost. Results are averages over 5,000 trials.
 
 ## Q2 – Sharing the Channel: FDMA vs TDMA
 
@@ -36,7 +43,7 @@ Q2's simulation files are stored separately in the `Q2/` folder.
 From the `Assignment/Assignment 2` folder:
 
 ```bash
-pip install -r requirements.txt
+pip install -r Q1/requirements.txt
 cd Q2
 python q2_simulation.py
 ```
@@ -60,7 +67,7 @@ Q3's reproducible direct-sequence CDMA simulation and evidence are stored in `Q3
 From the `Assignment/Assignment 2` folder:
 
 ```bash
-pip install -r requirements.txt
+pip install -r Q1/requirements.txt
 cd Q3
 python q3_simulation.py
 ```
