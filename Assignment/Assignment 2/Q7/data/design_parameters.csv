@@ -1,0 +1,9 @@
+parameter,value
+usable_FDMA_channels,79
+simulation_duration_minutes,60
+replications,300
+offered_traffic_erlangs,75
+mean_session_duration_minutes,0.5
+data_duty_cycle,0.10
+redesign_time_slot_seconds,6
+random_seed,20261110
