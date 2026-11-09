@@ -1,0 +1,7 @@
+scenario,scheme,usable_channels_or_slots,mean_arrivals_per_hour,mean_accepted_per_hour,blocking_percent,reserved_utilisation_percent,payload_utilisation_percent,reserved_idle_waste_percent,unoccupied_capacity_percent
+Continuous voice,FDMA,79,1126.23,1071.68,4.81,84.44,84.44,0.00,15.56
+Continuous voice,TDMA,70,1124.73,993.79,11.60,88.72,88.72,0.00,11.28
+Bursty data (10% duty),FDMA,79,8992.35,8492.25,5.56,88.83,8.88,79.95,11.17
+Bursty data (10% duty),TDMA,70,9001.76,7844.10,12.85,92.55,9.25,83.29,7.45
+Synchronized mixed (70/30),FDMA,79,3487.24,725.96,79.18,19.81,14.47,5.34,80.19
+Synchronized mixed (70/30),TDMA,70,3488.70,647.83,81.43,19.82,14.44,5.38,80.18
