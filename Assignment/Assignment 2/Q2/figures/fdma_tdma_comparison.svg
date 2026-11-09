@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470">
+<rect width="900" height="470" fill="white"/>
+<text x="450" y="30" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">FDMA vs TDMA: simulation comparison</text>
+<text x="235" y="70" text-anchor="middle" font-family="Arial" font-size="17">Blocking (%)</text>
+<text x="660" y="70" text-anchor="middle" font-family="Arial" font-size="17">Reserved utilisation (%)</text>
+<path d="M65 380H410 M490 380H835" stroke="#444"/>
+<g font-family="Arial" font-size="11" text-anchor="middle">
+<rect x="95" y="315" width="28" height="65" fill="#547aa5"/><rect x="129" y="223" width="28" height="157" fill="#d18b45"/>
+<text x="109" y="307">4.8</text><text x="143" y="215">11.6</text>
+<rect x="205" y="305" width="28" height="75" fill="#547aa5"/><rect x="239" y="206" width="28" height="174" fill="#d18b45"/>
+<text x="219" y="297">5.6</text><text x="253" y="198">12.9</text>
+<rect x="315" y="0" width="28" height="380" fill="#547aa5"/><rect x="349" y="0" width="28" height="380" fill="#d18b45"/>
+<text x="329" y="397">79.2</text><text x="363" y="412">81.4</text>
+<text x="126" y="435">Voice</text><text x="236" y="435">Bursty data</text><text x="346" y="435">Sync mix</text>
+<rect x="520" y="59" width="28" height="321" fill="#547aa5"/><rect x="554" y="42" width="28" height="338" fill="#d18b45"/>
+<text x="534" y="51">84.4</text><text x="568" y="34">88.7</text>
+<rect x="630" y="42" width="28" height="338" fill="#547aa5"/><rect x="664" y="28" width="28" height="352" fill="#d18b45"/>
+<text x="644" y="34">88.8</text><text x="678" y="20">92.6</text>
+<rect x="740" y="309" width="28" height="71" fill="#547aa5"/><rect x="774" y="309" width="28" height="71" fill="#d18b45"/>
+<text x="754" y="301">19.8</text><text x="788" y="301">19.8</text>
+<text x="551" y="435">Voice</text><text x="661" y="435">Bursty data</text><text x="771" y="435">Sync mix</text>
+</g>
+<rect x="350" y="452" width="14" height="12" fill="#547aa5"/><text x="370" y="463" font-family="Arial" font-size="12">FDMA</text>
+<rect x="440" y="452" width="14" height="12" fill="#d18b45"/><text x="460" y="463" font-family="Arial" font-size="12">TDMA</text>
+</svg>
