@@ -1,15 +1,20 @@
-import csv
+import csv, random
 from pathlib import Path
-N=2000
-rows=[]
+SEED=4306; N=2000; rng=random.Random(SEED); rows=[]
 for availability in (0.90,0.60,0.30):
-    online=round(N*availability); offline=N-online
-    rows.append({"availability":availability,"strategy":"immediate","generated":N,"delivered":online,"delayed":0,"lost":offline,"delivery_pct":round(100*online/N,2),"mean_delay_s":0.012})
-    # A queued item waits for a reconnection opportunity. The model uses an
-    # exponential waiting-time approximation with mean 30/a seconds.
-    mean_wait=30/availability
-    mean_delay=availability*.012+(1-availability)*(mean_wait+.012)
-    rows.append({"availability":availability,"strategy":"store_forward","generated":N,"delivered":N,"delayed":offline,"lost":0,"delivery_pct":100.0,"mean_delay_s":round(mean_delay,4)})
+    for strategy in ("immediate","store_forward"):
+        delivered=delayed=lost=0; delays=[]
+        for _ in range(N):
+            online=rng.random()<availability
+            if strategy=="immediate":
+                if online: delivered+=1; delays.append(0.012)
+                else: lost+=1
+            elif online:
+                delivered+=1; delays.append(0.012)
+            else:
+                delayed+=1; delivered+=1
+                delays.append(rng.expovariate(availability/30.0)+0.012)
+        rows.append({"availability":availability,"strategy":strategy,"generated":N,"delivered":delivered,"delayed":delayed,"lost":lost,"delivery_pct":round(100*delivered/N,2),"mean_delay_s":round(sum(delays)/len(delays),4) if delays else ""})
 with Path(__file__).with_name("output.csv").open("w",newline="") as f:
     w=csv.DictWriter(f,fieldnames=rows[0].keys());w.writeheader();w.writerows(rows)
-print("Q1 deterministic availability model; N=2000 per case");print(*rows,sep="\\n")
+print("Q1 Monte Carlo; fixed seed",SEED);print(*rows,sep="\\n")
