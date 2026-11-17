@@ -2,5 +2,5 @@ nodes,update_interval_s,header_B,entry_B,dsdv_full_dump_Bps,complexity
 10,5,24,12,288.0,O(N^2)
 20,5,24,12,1056.0,O(N^2)
 40,5,24,12,4032.0,O(N^2)
-60,5,24,12,8784.0,O(N^2)
+60,5,24,12,8928.0,O(N^2)
 80,5,24,12,15744.0,O(N^2)
