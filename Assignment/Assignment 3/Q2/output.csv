@@ -1,0 +1,4 @@
+design,registration_rtt_ms,downlink_path_ms,handoff_gap_ms,packets_lost_at_50pps,ipip_overhead_pct_1000B,ipip_overhead_pct_200B
+baseline,89,82,159,7.95,2.0,10.0
+regional_anchor,45,48,115,5.75,2.0,10.0
+route_optimised,89,40,159,7.95,2.0,10.0
