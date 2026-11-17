@@ -1,0 +1,6 @@
+nodes,dsdv_simulated_overhead_kBps,delivery_pct,mean_delay_ms,source
+10,0.36,44.1,20.6,assignment_report_simulation
+20,1.35,69.8,28.3,assignment_report_simulation
+40,5.20,82.0,28.0,assignment_report_simulation
+60,11.69,81.7,27.6,assignment_report_simulation
+80,20.54,81.3,26.2,assignment_report_simulation
