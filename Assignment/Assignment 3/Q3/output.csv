@@ -1,0 +1,5 @@
+source,destination,mesh_path,mesh_hops,mesh_delay_ms,cellular_air_hops,cellular_core_assumed_ms,cellular_total_model_ms
+S,E,S-A-C-D-E,4,48,1,20,32
+A,D,A-C-D,2,24,1,20,32
+B,E,B-C-D-E,3,36,1,20,32
+S,C,S-A-C,2,24,1,20,32
