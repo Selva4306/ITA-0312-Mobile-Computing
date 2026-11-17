@@ -1,0 +1,6 @@
+strategy,effective_cluster_N,channels_per_cell,cell_radius_km,sites_for_12km2,erlangs_per_cell_at_2pct,system_erlangs_at_2pct,subscriber_equivalent_at_2pct,planning_cost_index,assumption
+Fixed reuse,7,48,0.5,19,38.392,729.441,29177,21.85,Fixed cluster reuse; six first-tier interferers
+120-degree sectoring,7,48,0.5,19,38.392,729.441,29177,21.85,N=7 baseline; idealized two dominant interferers
+Dynamic borrowing,4,84,0.5,19,72.529,1378.048,55121,21.85,Effective N=4; borrowing subject to interference guard
+Hierarchical microcells N=3,3,112,0.25,76,99.624,7571.41,302856,89.4,N=3 local layer; smaller radius increases site count
+Hierarchical microcells N=7,7,48,0.25,76,38.392,2917.765,116710,89.4,N=7 local layer; conservative reuse with smaller radius
