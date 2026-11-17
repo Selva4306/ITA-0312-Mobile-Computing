@@ -1,0 +1,4 @@
+design,mn_fa_ms,fa_ha_ms,ha_processing_ms,registration_rtt_ms,downlink_path_ms,handoff_gap_ms,packets_lost_at_50pps
+baseline,12,30,5,89,82,159,7.95
+regional_anchor,12,8,5,45,48,115,5.75
+route_optimised,12,30,5,89,40,159,7.95
