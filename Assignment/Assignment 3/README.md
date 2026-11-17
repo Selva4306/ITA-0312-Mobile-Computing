@@ -36,7 +36,7 @@ Each script writes its task's `output.csv` in the same folder. Python 3 standard
 
 ## Evidence and assumptions
 
-- Q1 is a deterministic availability model with 2,000 updates per case. Store-and-forward assumes eventual reconnection and uses an exponential waiting-time approximation; this is not a real radio trace.
+- Q1 is a fixed-seed Monte Carlo availability model with 2,000 updates per case. Store-and-forward assumes eventual reconnection and uses an exponential waiting-time approximation; this is not a real radio trace.
 - Q2–Q4 are analytical/illustrative models using the explicit delays, packet sizes and QoS assumptions documented in the assignment answer. They are not live Mobile IP or cellular measurements.
 - Q5–Q6 include the routing comparison observations already documented in the assignment answer. The committed scripts regenerate the analytical AODV/DSDV output tables; the datasets label report-derived observations rather than claiming a fresh emulator run.
 - Q7 is a planning calculation for a hybrid emergency mesh, not a packet-level network emulator.
