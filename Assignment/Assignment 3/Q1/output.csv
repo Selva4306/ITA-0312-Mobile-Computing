@@ -1,0 +1,7 @@
+availability,strategy,generated,delivered,delayed,lost,delivery_pct,mean_delay_s
+0.9,immediate,2000,1803,0,197,90.15,0.0120
+0.9,store_forward,2000,2000,200,0,100.00,3.4421
+0.6,immediate,2000,1205,0,795,60.25,0.0120
+0.6,store_forward,2000,2000,800,0,100.00,16.7843
+0.3,immediate,2000,607,0,1393,30.35,0.0120
+0.3,store_forward,2000,2000,1393,0,100.00,49.9278
