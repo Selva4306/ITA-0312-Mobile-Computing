@@ -182,13 +182,13 @@ For baseline capacity ~29,177 subscribers and demand 100,000, D/T₀≈3.43; one
 
 ## Task 8 – Implementation and tests (4 marks)
 
-simulator.py implements hexagonal area/site estimates, Erlang-B recursion and inverse capacity search, fixed-seed Monte-Carlo SIR for N={3,4,7,12} and n={2.5,3,4}, a sectorised two-interferer comparison, subscriber-growth blocking and the event surge. It uses seed 4306 and 12,000 SIR samples per case.
+simulator.py generates axial hex-grid coordinates, assigns channel groups with an interference-distance graph-colouring check, computes hexagonal area/site estimates, applies Erlang-B recursion and inverse capacity search, and runs fixed-seed Monte-Carlo SIR for N={3,4,7,12} and n={2.5,3,4}, a sectorised two-interferer comparison, subscriber-growth blocking and the event surge. It uses seed 4306 and 12,000 SIR samples per case.
 
 The textbook N=7,n=4,six-interferer sanity case is calculated separately as 18.663 dB. Monte-Carlo results differ because they sample user locations, vary interferer distances and include shadowing.
 
 ## Task 9 – Experimental evidence (3 marks)
 
-- sir_results.csv: mean SIR, 5th percentile and outage probability.
+- channel_map.csv: generated axial cell coordinates and channel-group allocation for N=3,4,7,12.\n- sir_results.csv: mean SIR, 5th percentile and outage probability.
 - capacity_summary.csv: channels/cell, sites, 2% Erlangs and relative planning-cost index.
 - traffic_results.csv: offered traffic and blocking at 1k, 10k, 20k and 100k.
 - event_surge.csv: stadium surge and temporary-site estimates.
