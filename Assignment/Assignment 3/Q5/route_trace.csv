@@ -1,0 +1,11 @@
+phase,source,destination,next_hop,hop_count,sequence_number
+before,A,A,A,0,100
+before,A,B,B,1,202
+before,A,C,C,1,304
+before,A,D,B,2,406
+before,A,E,B,3,508
+after,A,A,A,0,100
+after,A,B,B,1,202
+after,A,C,C,1,304
+after,A,D,B,2,406
+after,A,E,C,2,510
