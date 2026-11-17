@@ -1,0 +1,13 @@
+node,event,decision
+S,RREQ_RECEIVE,rebroadcast
+A,RREQ_RECEIVE,rebroadcast
+B,RREQ_RECEIVE,rebroadcast
+C,RREQ_RECEIVE,rebroadcast
+Y,RREQ_RECEIVE,rebroadcast
+X,RREQ_RECEIVE,rebroadcast
+D,RREQ_RECEIVE,destination
+D,RREP_RECEIVE,install_forward_route
+Y,RREP_RECEIVE,install_forward_route
+C,RREP_RECEIVE,install_forward_route
+A,RREP_RECEIVE,install_forward_route
+S,RREP_RECEIVE,install_forward_route
