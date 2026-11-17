@@ -1,0 +1,4 @@
+event_strategy,event_erlangs_total,zone_sites,channels_per_site,offered_erlangs_per_site,blocking_probability,capacity_erlangs_at_2pct
+Fixed reuse N=7,1250.0,2,48,625.0,0.923333,76.783
+Sectorized N=7,1250.0,2,48,625.0,0.923333,76.783
+Temporary microcells N=3,1250.0,7,112,178.571,0.381567,697.367
