@@ -1,4 +1,4 @@
-active_flows,aodv_overhead_kBps,delivery_pct,mean_delay_ms,control_behaviour
-2,0.98,95.2,34.0,RREQ/RREP on demand; RERR on break; 1 Hz hello
-8,1.67,95.6,37.9,RREQ/RREP on demand; RERR on break; 1 Hz hello
-20,3.32,94.4,43.0,RREQ/RREP on demand; RERR on break; 1 Hz hello
+active_flows,aodv_overhead_kBps,delivery_pct,control_behaviour
+2,0.98,95.2,RREQ/RREP on demand; RERR on break; 1 Hz hello
+8,1.67,95.6,RREQ/RREP on demand; RERR on break; 1 Hz hello
+20,3.32,94.4,RREQ/RREP on demand; RERR on break; 1 Hz hello
