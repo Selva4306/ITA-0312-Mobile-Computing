@@ -1,0 +1,73 @@
+strategy,cluster_N,path_loss_n,sectoring,samples,sir_mean_db,sir_p05_db,outage_below_12db
+Fixed reuse,3,2.5,False,12000,7.763,0.711,0.80858
+Fixed reuse,3,3.0,False,12000,11.097,3.015,0.65417
+Fixed reuse,3,4.0,False,12000,17.763,7.352,0.30125
+Fixed reuse,4,2.5,False,12000,9.453,2.687,0.75133
+Fixed reuse,4,3.0,False,12000,13.125,5.167,0.53833
+Fixed reuse,4,4.0,False,12000,20.415,10.229,0.12242
+Fixed reuse,7,2.5,False,12000,12.545,5.911,0.56367
+Fixed reuse,7,3.0,False,12000,17.011,9.284,0.22425
+Fixed reuse,7,4.0,False,12000,25.499,15.876,0.002
+Fixed reuse,12,2.5,False,12000,15.63,8.945,0.27908
+Fixed reuse,12,3.0,False,12000,20.555,12.868,0.02358
+Fixed reuse,12,4.0,False,12000,30.249,20.789,0.0
+120-degree sectoring,3,2.5,False,12000,7.763,0.711,0.80858
+120-degree sectoring,3,2.5,True,12000,12.7,3.893,0.529
+120-degree sectoring,3,3.0,False,12000,11.097,3.015,0.65417
+120-degree sectoring,3,3.0,True,12000,15.781,5.896,0.34642
+120-degree sectoring,3,4.0,False,12000,17.763,7.352,0.30125
+120-degree sectoring,3,4.0,True,12000,21.959,9.553,0.11783
+120-degree sectoring,4,2.5,False,12000,9.453,2.687,0.75133
+120-degree sectoring,4,2.5,True,12000,14.527,5.872,0.3895
+120-degree sectoring,4,3.0,False,12000,13.125,5.167,0.53833
+120-degree sectoring,4,3.0,True,12000,18.063,8.264,0.19567
+120-degree sectoring,4,4.0,False,12000,20.415,10.229,0.12242
+120-degree sectoring,4,4.0,True,12000,24.901,12.899,0.03308
+120-degree sectoring,7,2.5,False,12000,12.545,5.911,0.56367
+120-degree sectoring,7,2.5,True,12000,17.704,9.398,0.15308
+120-degree sectoring,7,3.0,False,12000,17.011,9.284,0.22425
+120-degree sectoring,7,3.0,True,12000,21.995,12.699,0.03633
+120-degree sectoring,7,4.0,False,12000,25.499,15.876,0.002
+120-degree sectoring,7,4.0,True,12000,30.384,19.121,0.00075
+120-degree sectoring,12,2.5,False,12000,15.63,8.945,0.27908
+120-degree sectoring,12,2.5,True,12000,20.868,12.706,0.03442
+120-degree sectoring,12,3.0,False,12000,20.555,12.868,0.02358
+120-degree sectoring,12,3.0,True,12000,25.772,16.694,0.0015
+120-degree sectoring,12,4.0,False,12000,30.249,20.789,0.0
+120-degree sectoring,12,4.0,True,12000,35.605,24.556,0.0
+Dynamic borrowing,3,2.5,False,12000,7.763,0.711,0.80858
+Dynamic borrowing,3,3.0,False,12000,11.097,3.015,0.65417
+Dynamic borrowing,3,4.0,False,12000,17.763,7.352,0.30125
+Dynamic borrowing,4,2.5,False,12000,9.453,2.687,0.75133
+Dynamic borrowing,4,3.0,False,12000,13.125,5.167,0.53833
+Dynamic borrowing,4,4.0,False,12000,20.415,10.229,0.12242
+Dynamic borrowing,7,2.5,False,12000,12.545,5.911,0.56367
+Dynamic borrowing,7,3.0,False,12000,17.011,9.284,0.22425
+Dynamic borrowing,7,4.0,False,12000,25.499,15.876,0.002
+Dynamic borrowing,12,2.5,False,12000,15.63,8.945,0.27908
+Dynamic borrowing,12,3.0,False,12000,20.555,12.868,0.02358
+Dynamic borrowing,12,4.0,False,12000,30.249,20.789,0.0
+Hierarchical microcells N=3,3,2.5,False,12000,7.763,0.711,0.80858
+Hierarchical microcells N=3,3,3.0,False,12000,11.097,3.015,0.65417
+Hierarchical microcells N=3,3,4.0,False,12000,17.763,7.352,0.30125
+Hierarchical microcells N=3,4,2.5,False,12000,9.453,2.687,0.75133
+Hierarchical microcells N=3,4,3.0,False,12000,13.125,5.167,0.53833
+Hierarchical microcells N=3,4,4.0,False,12000,20.415,10.229,0.12242
+Hierarchical microcells N=3,7,2.5,False,12000,12.545,5.911,0.56367
+Hierarchical microcells N=3,7,3.0,False,12000,17.011,9.284,0.22425
+Hierarchical microcells N=3,7,4.0,False,12000,25.499,15.876,0.002
+Hierarchical microcells N=3,12,2.5,False,12000,15.63,8.945,0.27908
+Hierarchical microcells N=3,12,3.0,False,12000,20.555,12.868,0.02358
+Hierarchical microcells N=3,12,4.0,False,12000,30.249,20.789,0.0
+Hierarchical microcells N=7,3,2.5,False,12000,7.763,0.711,0.80858
+Hierarchical microcells N=7,3,3.0,False,12000,11.097,3.015,0.65417
+Hierarchical microcells N=7,3,4.0,False,12000,17.763,7.352,0.30125
+Hierarchical microcells N=7,4,2.5,False,12000,9.453,2.687,0.75133
+Hierarchical microcells N=7,4,3.0,False,12000,13.125,5.167,0.53833
+Hierarchical microcells N=7,4,4.0,False,12000,20.415,10.229,0.12242
+Hierarchical microcells N=7,7,2.5,False,12000,12.545,5.911,0.56367
+Hierarchical microcells N=7,7,3.0,False,12000,17.011,9.284,0.22425
+Hierarchical microcells N=7,7,4.0,False,12000,25.499,15.876,0.002
+Hierarchical microcells N=7,12,2.5,False,12000,15.63,8.945,0.27908
+Hierarchical microcells N=7,12,3.0,False,12000,20.555,12.868,0.02358
+Hierarchical microcells N=7,12,4.0,False,12000,30.249,20.789,0.0
