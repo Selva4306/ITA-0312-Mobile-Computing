@@ -40,3 +40,25 @@ The textbook equal-distance check for N=7, n=4 and six first-tier interferers is
 ## Important interpretation
 
 The results are engineering estimates, not a licensed-frequency plan. Before deployment, replace the assumed radius, traffic distribution, propagation and antenna parameters with surveyed values and validate backhaul, control-channel and regulatory constraints.
+
+
+## Task-wise folders
+
+Each of the 12 assignment tasks now has its own folder. Open a folder to find its separated answer (`solution.md`), runnable task implementation (`implementation.py`) and quick instructions (`README.md`).
+
+| Folder | Task |
+|---|---|
+| [Q1](Q1/) | Alternative frequency-planning strategies |
+| [Q2](Q2/) | Governing design parameters |
+| [Q3](Q3/) | Capacity and interference derivation |
+| [Q4](Q4/) | Best, average and worst cases |
+| [Q5](Q5/) | Scaling and sensitivity |
+| [Q6](Q6/) | Recurrence for repeated splitting |
+| [Q7](Q7/) | Solve and interpret recurrence |
+| [Q8](Q8/) | Implementation and tests |
+| [Q9](Q9/) | Experimental evidence |
+| [Q10](Q10/) | Theory vs simulation |
+| [Q11](Q11/) | Final recommendation |
+| [Q12](Q12/) | Stadium design challenge |
+
+The original combined `report.md`, shared `simulator.py`, datasets and plots are retained in this parent folder as common reference/evidence files.
