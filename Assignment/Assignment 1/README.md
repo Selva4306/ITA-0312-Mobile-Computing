@@ -5,7 +5,8 @@ This folder contains the design report, reproducible Python simulator, generated
 ## Files
 
 - `report.md` – answers Tasks 1–12, derivations, pseudocode, design decision and stadium challenge.
-- `simulator.py` – fixed-seed Monte-Carlo SIR, Erlang-B capacity, subscriber-growth and event-surge model.
+- `simulator.py` – fixed-seed Monte-Carlo SIR, Erlang-B capacity, hex-grid generation, channel grouping, subscriber-growth and event-surge model.
+- `channel_map.csv` – generated hex-cell coordinates and channel-group allocation for N=3,4,7,12.
 - `sir_results.csv` – mean / 5th-percentile SIR and outage results for N=3,4,7,12 and n=2.5,3,4.
 - `capacity_summary.csv` – strategy-level channels, sites and 2% GoS capacity.
 - `traffic_results.csv` – blocking and offered traffic for 1k, 10k, 20k and 100k subscribers.
