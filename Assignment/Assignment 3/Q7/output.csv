@@ -1,0 +1,9 @@
+metric,value,unit
+gateway_handoffs_per_minute,2.25,per_min
+registrations_including_refresh_per_minute,4.25,per_min
+mobile_ip_signalling_per_node,10.77,B/s
+mobile_ip_signalling_30_nodes,323.1,B/s
+gateway_handoff_interruption,227,ms
+mesh_route_repair,100,ms
+tunnel_overhead_200B,10,percent
+tunnel_overhead_1000B,2,percent
