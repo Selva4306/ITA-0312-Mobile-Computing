@@ -1,0 +1,2 @@
+scenario,nodes,speed_mps,gateway_spacing_m,registration_rtt_ms,mesh_repair_ms
+emergency_mesh,30,15,400,157,100
