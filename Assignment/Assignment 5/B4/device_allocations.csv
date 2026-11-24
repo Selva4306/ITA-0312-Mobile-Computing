@@ -1,0 +1,5 @@
+device,resolution,bitrate_kbps,upload_timing,rule,estimated_seconds,energy_units,battery_percent,estimated_battery_impact_pct
+Low-end,480,500,when network validated; defer below 20% battery,weak-network saver,17.0,0.48,22,0.0158
+Mid-range,720,1200,when network validated; defer below 20% battery,balanced,29.04,0.87,58,0.0194
+Flagship,1080,2500,when network validated; defer below 20% battery,high-capability,63.96,2.04,86,0.0408
+Low-battery WiFi,480,500,when network validated; defer below 20% battery,battery saver,5.24,0.14,12,0.0036

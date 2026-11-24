@@ -1,0 +1,5 @@
+feed_items,quality_levels,cache_levels,prefetch_levels,exact_config_evaluations,adaptive_decision_steps
+3,3,3,3,81,9
+6,3,3,3,162,18
+12,3,3,3,324,36
+24,3,3,3,648,72

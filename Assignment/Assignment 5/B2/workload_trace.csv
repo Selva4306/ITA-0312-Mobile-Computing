@@ -1,0 +1,17 @@
+workload,record,priority,network,battery,permission,status,reason
+A_easy,R1,3,3,80,1,delivered,constraints satisfied
+A_easy,R2,3,3,75,1,delivered,constraints satisfied
+A_easy,R3,2,3,70,1,delivered,constraints satisfied
+A_easy,R4,2,3,65,1,delivered,constraints satisfied
+A_easy,R5,1,3,60,1,delivered,constraints satisfied
+A_easy,R6,1,3,55,1,delivered,constraints satisfied
+A_easy,R7,2,3,50,1,delivered,constraints satisfied
+A_easy,R8,1,3,45,1,delivered,constraints satisfied
+B_adversarial,R1,3,0,80,1,deferred,network below threshold
+B_adversarial,R2,3,1,18,1,deferred,network below threshold
+B_adversarial,R3,2,0,70,1,deferred,network below threshold
+B_adversarial,R4,2,3,20,1,deferred,battery below reserve
+B_adversarial,R5,1,1,60,1,deferred,network below threshold
+B_adversarial,R6,1,0,55,1,deferred,network below threshold
+B_adversarial,R7,2,1,22,1,deferred,network below threshold
+B_adversarial,R8,1,3,19,0,cancelled,permission revoked

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<rect width="760" height="360" fill="white"/><text x="380" y="28" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">B3: Exact vs Adaptive Feed Cost</text>
+<line x1="80" y1="300" x2="710" y2="300" stroke="#333"/><line x1="80" y1="55" x2="80" y2="300" stroke="#333"/>
+<text x="28" y="180" transform="rotate(-90 28 180)" text-anchor="middle" font-family="Arial" font-size="12">Modelled cost (lower is better)</text>
+<g font-family="Arial" font-size="12" fill="#222"><text x="170" y="325" text-anchor="middle">Light</text><text x="310" y="325" text-anchor="middle">Medium</text><text x="450" y="325" text-anchor="middle">Heavy</text><text x="590" y="325" text-anchor="middle">Counterexample</text></g>
+<g fill="#4779b8"><rect x="130" y="254" width="28" height="46"/><rect x="270" y="254" width="28" height="46"/><rect x="410" y="225" width="28" height="75"/><rect x="550" y="254" width="28" height="46"/></g>
+<g fill="#e29a43"><rect x="164" y="156" width="28" height="144"/><rect x="304" y="156" width="28" height="144"/><rect x="444" y="225" width="28" height="75"/><rect x="584" y="156" width="28" height="144"/></g>
+<g font-family="Arial" font-size="11" fill="#222"><text x="144" y="247" text-anchor="middle">2.8</text><text x="284" y="247" text-anchor="middle">2.8</text><text x="424" y="218" text-anchor="middle">4.8</text><text x="564" y="247" text-anchor="middle">2.8</text><text x="178" y="149" text-anchor="middle">8.8</text><text x="318" y="149" text-anchor="middle">8.8</text><text x="458" y="218" text-anchor="middle">4.8</text><text x="598" y="149" text-anchor="middle">8.8</text></g>
+<rect x="515" y="45" width="13" height="13" fill="#4779b8"/><text x="535" y="56" font-family="Arial" font-size="12">Exact</text><rect x="595" y="45" width="13" height="13" fill="#e29a43"/><text x="615" y="56" font-family="Arial" font-size="12">Adaptive</text>
+</svg>

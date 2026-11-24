@@ -1,0 +1,15 @@
+strategy,id,priority,status,reason,network,battery
+FIFO,S1,2,success,encrypted upload acknowledged,3,70
+FIFO,S2,1,deferred,network unavailable/weak,1,65
+FIFO,S3,3,deferred,battery reserve/Doze,3,18
+FIFO,S4,5,deferred,network unavailable/weak,0,55
+FIFO,S5,4,rejected,payload not encrypted,3,80
+FIFO,S6,5,cancelled,permission revoked,3,60
+FIFO,S7,2,success,encrypted upload acknowledged,3,75
+priority,S4,5,deferred,network unavailable/weak,0,55
+priority,S6,5,cancelled,permission revoked,3,60
+priority,S5,4,rejected,payload not encrypted,3,80
+priority,S3,3,deferred,battery reserve/Doze,3,18
+priority,S1,2,success,encrypted upload acknowledged,3,70
+priority,S7,2,success,encrypted upload acknowledged,3,75
+priority,S2,1,deferred,network unavailable/weak,1,65

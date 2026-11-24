@@ -1,0 +1,5 @@
+case,load,exact_cost,approx_cost,match,exact_q,exact_cache,exact_prefetch,adaptive_q,adaptive_cache,adaptive_prefetch,adaptive_changes
+light,1,2.8,8.8,0,1,1,0,3,2,2,0
+medium,3,2.8,8.8,0,1,1,0,3,2,2,0
+heavy,5,4.8,4.8,1,1,2,2,1,2,2,2
+counterexample,2,2.8,8.8,0,1,1,0,3,2,2,0
