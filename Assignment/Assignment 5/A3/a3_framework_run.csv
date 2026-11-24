@@ -1,0 +1,4 @@
+task_id,domain,priority,attempts,result
+P1,PUSH,5,1,EXECUTED
+S1,SENSOR,4,1,EXECUTED
+D1,SYNC,3,1,EXECUTED
