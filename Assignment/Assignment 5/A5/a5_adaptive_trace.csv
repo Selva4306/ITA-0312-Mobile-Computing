@@ -1,0 +1,10 @@
+device,step,quality,cache,prefetch,cost,frame_ms,energy,memory_mb
+Low-end,0,2,2,1,22.3,17.7,8.7,43
+Low-end,1,1,2,1,6.9,15.3,6.9,43
+Low-end,2,1,2,0,6.4,14.6,6.4,36
+Mid-range,0,2,2,1,9.7,13.7,9.7,43
+Mid-range,1,1,2,1,7.9,11.3,7.9,43
+Mid-range,2,1,2,0,7.4,10.6,7.4,36
+Flagship,0,2,2,1,10.7,10.7,10.7,43
+Flagship,1,1,2,1,8.9,8.3,8.9,43
+Flagship,2,1,2,0,8.4,7.6,8.4,36
