@@ -1,0 +1,7 @@
+event,work_id,type,decision,battery,network,doze,permission,logged_in
+E1,W1,COLLECT,RUN,78,True,False,True,True
+E2,W2,UPLOAD,RUN,78,True,False,True,True
+E3,W3,UPLOAD,DEFER_POWER,78,True,True,True,True
+E4,W3,UPLOAD,RUN,78,True,False,True,True
+E4,W4,ALERT,RUN,78,True,False,True,True
+E5,ALL,SESSION,CANCEL_PENDING,78,True,False,True,False
