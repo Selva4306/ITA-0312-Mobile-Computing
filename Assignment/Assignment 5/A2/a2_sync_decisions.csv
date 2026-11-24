@@ -1,0 +1,6 @@
+record,priority,size_kb,sensitive,encrypted,conflict,decision
+R1,10,12,True,True,False,UPLOAD
+R2,2,900,False,True,False,UPLOAD
+R3,8,35,True,False,False,REJECT_UNENCRYPTED
+R4,5,60,False,True,True,RESOLVE_CONFLICT
+R5,1,8,False,True,False,UPLOAD
